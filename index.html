@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>V.I.P.E.R. - Tennis Edition</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="inc/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="content">
+			
+			<div class="mise">
+				<h1>Mise totale :</h1>
+				<input id="somme" type="text" name="somme" required>
+			</div>
+
+			<br>
+
+			<table>
+				<tr>
+					<th>Cote Victoire</th>
+					<th>Cote Nul</th>
+				</tr>
+				<tr>
+					<td><input id="coteV" type="text" name="coteV" required></td>
+					<td><input id="coteN" type="text" name="coteN" required></td>
+				</tr>
+			</table>
+			
+			<br>
+
+			<div class="valid">
+				<input type="submit" id="grosbouton" value="Calculer" onclick='return dutching()'>
+			</div>
+
+			<br>
+
+			<table>
+				<tr>
+					<th></th>
+					<th>Dutching</th>
+					<th>Assurance Nul</th>
+					<th>Assurance Victoire</th>
+				</tr>
+				<tr>
+					<th>Mise Victoire</th>
+					<td class="dutch" id="miseV"></td>
+					<td class="assN" id="miseANV"></td>
+					<td class="assV" id="miseAVV"></td>
+				</tr>
+				<tr>
+					<th>Mise Nul</th>
+					<td class="dutch" id="miseN"></td>
+					<td class="assN" id="miseANN"></td>
+					<td class="assV" id="miseAVN"></td>
+				</tr>
+				<tr>
+					<th>Cote</th>
+					<td class="dutch" id="coteD"> </td>
+					<td class="assN" id="coteAN"></td>
+					<td class="assV" id="coteAV"></td>
+				</tr>
+				<tr>
+					<th>Gain</th>
+					<td class="dutch" id="gains2"></td>
+					<td class="assN" id="gainsAN"></td>
+					<td class="assV" id="gainsAV"></td>
+				</tr>
+				<tr>
+					<th>Bénéfice</th>
+					<td class="dutch" id="benefice2"></td>
+					<td class="assN" id="beneficeAN"></td>
+					<td class="assV" id="beneficeAV"></td>
+				</tr>
+			</table>
+
+		</div>
+		
+		<script src="inc/js/app.js">
+
+			
+		</script>
+	</body>
+</html>
